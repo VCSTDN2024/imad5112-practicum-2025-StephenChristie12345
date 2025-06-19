@@ -1,4 +1,4 @@
-package com.example.musicplaylist
+package com.example.musicmanager
 
 import android.os.Bundle
 import android.widget.*
@@ -41,7 +41,7 @@ class DetailedActivity : AppCompatActivity() {
         btnAverage.setOnClickListener {
             if (ratings.isNotEmpty()) {
                 val avg = ratings.average()
-                txtDisplay.text = "⭐ Average Rating: %.2f".format(avg)
+                txtDisplay.text = " Average Rating: %.2f".format(avg)
             } else {
                 txtDisplay.text = "No ratings to average."
             }
