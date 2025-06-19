@@ -45,10 +45,11 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-        val titleInput = findViewById<EditText>(R.id.editTitle).text.toString().trim()
-        val artistInput = findViewById<EditText>(R.id.editArtist).text.toString().trim()
-        val ratingInput = findViewById<EditText>(R.id.editRating).text.toString().trim()
-        val commentInput = findViewById<EditText>(R.id.editComment).text.toString().trim()
+
+        val titleInput = findViewById<EditText>(R.id.editText1).text.toString().trim()
+        val artistInput = findViewById<EditText>(R.id.editText2).text.toString().trim()
+        val ratingInput = findViewById<EditText>(R.id.editText3).text.toString().trim()
+        val commentInput = findViewById<EditText>(R.id.editText4).text.toString().trim()
 
         if (titleInput.isEmpty() || artistInput.isEmpty() || ratingInput.isEmpty()) {
             Toast.makeText(this, "Please fill in all required fields", Toast.LENGTH_SHORT).show()
@@ -70,10 +71,10 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "Song added!", Toast.LENGTH_SHORT).show()
 
         // Clear inputs
-        findViewById<EditText>(R.id.editTitle).text.clear()
-        findViewById<EditText>(R.id.editArtist).text.clear()
-        findViewById<EditText>(R.id.editRating).text.clear()
-        findViewById<EditText>(R.id.editComment).text.clear()
+        findViewById<EditText>(R.id.editText1).text.clear()
+        findViewById<EditText>(R.id.editText2).text.clear()
+        findViewById<EditText>(R.id.editText3).text.clear()
+        findViewById<EditText>(R.id.editText4).text.clear()
     }
 }
 
