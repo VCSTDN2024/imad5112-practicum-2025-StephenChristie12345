@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         addButton.setOnClickListener { addSong() }
 
         viewButton.setOnClickListener {
-            val intent = Intent(this, MainActivity2::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             intent.putExtra("songs", songTitles)
             intent.putExtra("artists", artistNames)
             intent.putExtra("ratings", ratings)
