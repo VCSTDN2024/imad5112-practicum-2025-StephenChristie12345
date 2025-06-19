@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("ratings", ratings)
             intent.putExtra("comments", comments)
             startActivity(intent)
+            finish()
         }
 
         exitButton.setOnClickListener { finish() }
@@ -75,6 +76,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<EditText>(R.id.editText2).text.clear()
         findViewById<EditText>(R.id.editText3).text.clear()
         findViewById<EditText>(R.id.editText4).text.clear()
+
     }
 }
 
